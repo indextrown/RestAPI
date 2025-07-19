@@ -13,8 +13,6 @@ from book.book_api import book_api
 from book.book_view import book_view
 
 
-
-
 app = Flask(__name__)
 swagger = Swagger(app)
 
@@ -37,4 +35,6 @@ app.register_blueprint(book_view)
 
 # ✅ 서버 실행
 if __name__ == '__main__':
-    app.run(debug=True)
+   # app.py
+    app.run(host='0.0.0.0', port=7000)
+
