@@ -8,12 +8,11 @@
 import Foundation
 
 // MARK: – 도메인 모델
-struct User {
+struct User: Codable {
     let id: String?       // Firestore 문서ID (읽을 때만 설정)
     let name: String
-    let age: Int
+    var age: Int
 }
-
 
 // MARK: – Firestore 전송·수신용 DTO
 struct UserDto: Codable {

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     private var subscriptions = Set<AnyCancellable>()
     @IBOutlet weak var navToTodosApiBtn: UIButton!
-    
+    @IBOutlet weak var navToFirebaseApiBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,16 @@ class ViewController: UIViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             })
             .store(in: &subscriptions)
+        
+        navToFirebaseApiBtn
+            .tapPublisher
+            .sink(receiveValue: {
+                print(#fileID, #function, #line, "- ")
+                let vc = FirebaseTab()
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+            .store(in: &subscriptions)
+        
     }
 }
 

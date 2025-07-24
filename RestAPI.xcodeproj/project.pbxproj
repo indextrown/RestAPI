@@ -43,6 +43,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DF8574152E32AEB900FEA74B /* Firebase */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		DFD2DE2C2E2E825300DD05AE /* Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Extension;
@@ -114,6 +119,7 @@
 		DFED5B8B2E2CAD1C00624751 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DF8574152E32AEB900FEA74B /* Firebase */,
 				DF5A37482E312FFB00423A4B /* Model */,
 				DFD2DE2C2E2E825300DD05AE /* Extension */,
 				DFED5B932E2CAD5300624751 /* Todos */,
@@ -148,6 +154,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DF5A37482E312FFB00423A4B /* Model */,
+				DF8574152E32AEB900FEA74B /* Firebase */,
 				DFD2DE2C2E2E825300DD05AE /* Extension */,
 				DFED5B932E2CAD5300624751 /* Todos */,
 				DFF1F5C82E30D087004CA49B /* Manager */,

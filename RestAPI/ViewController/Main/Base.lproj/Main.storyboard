@@ -36,7 +36,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="OmQ-UB-1VT"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="FirebaseApi"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqy-t0-QHu">
                                                 <rect key="frame" x="20" y="128" width="353" height="40"/>
@@ -72,6 +72,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6wU-76-iou"/>
                     <connections>
+                        <outlet property="navToFirebaseApiBtn" destination="dSk-dF-hMb" id="yx5-IZ-7Cn"/>
                         <outlet property="navToTodosApiBtn" destination="mNB-Nc-5Ij" id="TNX-M1-giR"/>
                     </connections>
                 </viewController>

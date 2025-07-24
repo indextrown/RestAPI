@@ -21,5 +21,22 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>index.zapto.org</key>
+            <dict>
+                <!-- HTTP 연결 허용 (키 이름 반드시 NSExceptionAllowsInsecureHTTPLoads) -->
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <!-- 서브도메인 및 포트 포함 모든 하위 경로 허용 -->
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+
 </dict>
 </plist>
